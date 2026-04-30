@@ -1,104 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasar Yash | Portfolio</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
-        header {
-            background: #1e293b;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
-        }
-        nav a {
-            margin: 0 15px;
-            color: white;
-            text-decoration: none;
-        }
-        section {
-            padding: 40px;
-        }
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 10px 0;
-            border-radius: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-        }
-        .btn {
-            background: #38bdf8;
-            padding: 10px 15px;
-            border: none;
-            color: black;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Yasar N – Electronics & Communication Engineering Student | Software Developer Portfolio"/>
+  <meta name="keywords" content="Yasar N, Portfolio, ECE, Software Developer, IoT, Java, Node.js"/>
+  <title>Yasar N | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<header>
-    <h1>Yasar Yash</h1>
-    <p>IoT Developer | Web Developer | Problem Solver</p>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">YN</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:yasaryash17@gmail.com" class="btn btn-nav">Hire Me</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>I am passionate about IoT, Web Development, and building real-world solutions using Arduino, ESP32, and modern web technologies.</p>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>Smart Traffic Light System</h3>
-        <p>Built using Arduino with multi-threaded logic and sensors.</p>
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="grid-overlay"></div>
     </div>
-
-    <div class="card">
-        <h3>Gas Detection System</h3>
-        <p>MQ sensor with LCD display for real-time monitoring.</p>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Yasar N</span>
+      </h1>
+      <p class="hero-subtitle">Electronics &amp; Communication Engineer</p>
+      <p class="hero-desc">
+        Driven to build a career in <strong>software development</strong>. Eager to expand technical proficiency, gain practical industry experience, and contribute to innovative and meaningful projects.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/yasaryash17" target="_blank" class="social-link" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/yasar-n-2149b0296" target="_blank" class="social-link" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://leetcode.com/u/YASAR7" target="_blank" class="social-link" title="LeetCode">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+        </a>
+        <a href="mailto:yasaryash17@gmail.com" class="social-link" title="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
     </div>
-
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="card">
-        <p>Java, Python, HTML, CSS, JavaScript</p>
-        <p>Arduino, ESP32, IoT Systems</p>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-inner">
+          <span class="avatar-initials">YN</span>
+        </div>
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <div class="ring ring-3"></div>
+      </div>
+      <div class="stat-cards">
+        <div class="stat-card stat-1">
+          <span class="stat-num">8.53</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-card stat-2">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-card stat-3">
+          <span class="stat-num">2</span>
+          <span class="stat-label">Internships</span>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-    <button class="btn">Hire Me</button>
-</section>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Education &amp; Background</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon">🎓</div>
+          <h3>BE Electronics &amp; Communication Engineering</h3>
+          <p class="about-school">Rathinam Technical Campus, Coimbatore</p>
+          <p class="about-period">09/2023 – Present</p>
+          <div class="about-badge">CGPA: 8.53</div>
+          <p class="about-minor">Honours: Sensor Technologies &amp; IoT <em>(In Progress)</em></p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">🏫</div>
+          <h3>HSC – 12th Grade</h3>
+          <p class="about-school">Nirmala Matha Matric Hr. Sec. School</p>
+          <p class="about-period">2022 – 2023</p>
+          <div class="about-badge">Score: 83%</div>
+        </div>
+        <div class="about-card glass-card about-objective">
+          <div class="about-icon">🚀</div>
+          <h3>Career Objective</h3>
+          <p>Electronics and Communication Engineering student driven to build a career in software development. Eager to expand technical proficiency, gain practical industry experience, and contribute to innovative and meaningful projects.</p>
+          <div class="info-chips">
+            <span>📍 Coimbatore</span>
+            <span>📞 7339581644</span>
+            <span>✉️ yasaryash17@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>© 2026 Yasar Yash</p>
-</footer>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills &amp; Tools</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon">💻</div>
+          <h3>Technical Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Basics of DSA</span>
+            <span class="skill-tag">HTML &amp; CSS</span>
+            <span class="skill-tag">Node.js</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon">🤝</div>
+          <h3>Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag soft">Team Collaboration</span>
+            <span class="skill-tag soft">Leadership Quality</span>
+            <span class="skill-tag soft">Critical Thinking</span>
+          </div>
+        </div>
+        <div class="skill-category glass-card">
+          <div class="skill-cat-icon">🛠️</div>
+          <h3>Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag tool">Tinkercad</span>
+            <span class="skill-tag tool">Arduino IDE</span>
+            <span class="skill-tag tool">NI Multisim</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">🌿</div>
+            <div class="project-status">Featured</div>
+          </div>
+          <h3>Smart Agriculture System</h3>
+          <p>Developed a sophisticated Smart Agriculture System that automates monitoring and irrigation processes using advanced sensors and microcontrollers.</p>
+          <div class="project-tags">
+            <span>IoT</span>
+            <span>Sensors</span>
+            <span>Arduino</span>
+            <span>Automation</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/yasaryash17" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">🏗️</div>
+            <div class="project-status in-progress">In Progress</div>
+          </div>
+          <h3>Construction Materials Web Platform</h3>
+          <p>Developing a web platform to enable users to buy construction materials and schedule services seamlessly, with an intuitive interface and backend integration.</p>
+          <div class="project-tags">
+            <span>Node.js</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Web Dev</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/yasaryash17" target="_blank" class="project-link">View on GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERNSHIPS ===== -->
+  <section id="internships" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Internships</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Arivupattarai Training Internship Programme</h3>
+                <p class="timeline-org">Rathinam Technical Campus</p>
+              </div>
+              <span class="timeline-date">07/2025 – 08/2025</span>
+            </div>
+            <p>Participated as a Battalion member, gained knowledge in basic electronics and contributed to teaching fundamental concepts and assisting in practical sessions.</p>
+            <div class="timeline-tags">
+              <span>Electronics</span>
+              <span>Teaching</span>
+              <span>Leadership</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Internet of Things (IoT)</h3>
+                <p class="timeline-org">NoviTech R&amp;D Private Limited</p>
+              </div>
+              <span class="timeline-date">09/2025 – 10/2025</span>
+            </div>
+            <p>Completed an online internship in Internet of Things (IoT), gaining in-depth knowledge in sensors, microcontrollers, and IoT fundamentals.</p>
+            <div class="timeline-tags">
+              <span>IoT</span>
+              <span>Sensors</span>
+              <span>Microcontrollers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements &amp; Certifications</h2>
+      </div>
+      <div class="achieve-grid">
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">🏆</div>
+          <h3>II Runner Up – Krizen 2024</h3>
+          <p>IoT Project Presentation – Secured second runner-up position in a competitive IoT showcase event.</p>
+          <span class="achieve-tag">Achievement</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">🚀</div>
+          <h3>IDE Bootcamp</h3>
+          <p>Innovation, Design, and Entrepreneurship (IDE) Bootcamp by AICTE, MoE's Innovation Cell, and the Ministry of Education.</p>
+          <span class="achieve-tag">Achievement</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">📜</div>
+          <h3>NPTEL Certification</h3>
+          <p>Introduction to Industry 4.0 and Industrial Internet of Things – <strong>Elite Silver</strong> certification.</p>
+          <span class="achieve-tag cert">Certification</span>
+        </div>
+        <div class="achieve-card glass-card">
+          <div class="achieve-icon">💡</div>
+          <h3>IDE Bootcamp Phase II</h3>
+          <p>AICTE &amp; Ministry of Education's Innovation Cell (MIC) – Phase II completion certification.</p>
+          <span class="achieve-tag cert">Certification</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-desc">I'm open to internships, collaborations, and full-time roles. Feel free to reach out!</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:yasaryash17@gmail.com" class="contact-item glass-card">
+            <div class="contact-icon">✉️</div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">yasaryash17@gmail.com</span>
+            </div>
+          </a>
+          <a href="tel:7339581644" class="contact-item glass-card">
+            <div class="contact-icon">📞</div>
+            <div>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">7339581644</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com/in/yasar-n-2149b0296" target="_blank" class="contact-item glass-card">
+            <div class="contact-icon">💼</div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">yasar-n-2149b0296</span>
+            </div>
+          </a>
+          <a href="https://github.com/yasaryash17" target="_blank" class="contact-item glass-card">
+            <div class="contact-icon">🐙</div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">yasaryash17</span>
+            </div>
+          </a>
+        </div>
+        <form class="contact-form glass-card" id="contact-form">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" id="form-name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit">Send Message 🚀</button>
+          <p class="form-note" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">YN</span>
+      <p>Designed &amp; Built with ❤️ by <strong>Yasar N</strong> · 2025</p>
+      <div class="footer-socials">
+        <a href="https://github.com/yasaryash17" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yasar-n-2149b0296" target="_blank">LinkedIn</a>
+        <a href="https://leetcode.com/u/YASAR7" target="_blank">LeetCode</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
